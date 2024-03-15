@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            /* background: linear-gradient(to right, darkorchid, deepskyblue, lightskyblue); */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<head>
+  <meta charset="utf-8">
+  <veta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script defer src="script.js"></script>
+  <title>Good Quiz</title>
+</head>
+
+<body>
+  <div class="container">
+    <center><h1 class="">Gret Quiz</h1>
+    <h2 id="theme" class="hide">Themes:</h2></center>
+    <center><div class="congrats hide" id="congrats"></h3></center>
+    <div id="score" class="hide"></div>
+    <center><div id="grade" class="congrats hide"></div></center>
+
+    <div id="high-scores-container" class="hide">
+      <center><h2>High Scores</h2></center>
+      <ol id="high-scores"></ol>
+      <input type="text" id="name-input" placeholder="Enter your name">
+      <button id="submit-score">Submit Score</button>
+    </div>
+    
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-btns" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls"> 
+      <img src="images/5694744.png" width="50" height="50" id="picture1" style="margin:0 10px">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+      <button id="restart-btn" class="restart-btn btn hide">Restart</button>
+      <button id="end-btn" class="end-btn btn hide">Finish Quiz</button>
+      <br>
+      <div id="theme-btns" class="btn-grid">
+          <button id="theme1" class = "btn theme-btn hide">General</button>
+          <button id="theme2" class = "btn theme-btn hide">Maths</button>
+          <button id="theme3" class = "btn theme-btn hide">History</button>
+          <button id="theme4" class = "btn theme-btn hide">Science</button>
+      </div>
+      <img src="images/5694744.png" width="50" height="50" id="picture2" style="margin:0 10px">
+    </div>
+</body>
+</html>
