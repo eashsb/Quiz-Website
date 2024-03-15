@@ -1,0 +1,168 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: calibri;
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-incorrect: 0;
+  --hue-correct: 145;
+  /* --hue-title: linear-gradient(to right, darkorchid, deepskyblue, lightskyblue); */
+
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem;
+  color: hsl(var(--hue-neutral), 95%, 65%);
+  background-color: hsl(var(--hue-neutral), 95%, 20%);
+  border-radius:10px;
+  justify-content: center;
+  align-items: center;
+  width:400px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem;
+  color: hsl(var(--hue-neutral), 95%, 65%);
+  background-color: hsl(var(--hue-neutral), 95%, 20%);
+  border-radius:10px;
+  justify-content: center;
+  align-items: center;
+  width:400px;
+}
+
+input {
+  justify-content: center;
+  align-items: center;
+  width:100px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto; 
+}
+
+.congrats, .grade {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem;
+  color: hsl(var(--hue-neutral), 100%, 65%);
+  background-color: hsl(var(--hue-neutral), 100%, 20%);
+  padding: 5px;
+  border-radius:10px;
+  justify-content: center;
+  align-items: center;
+  width:400px;
+}
+
+body {  
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height:100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.neutral {
+  --hue: var(--hue-neutral);
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.incorrect {
+  --hue: var(--hue-incorrect);
+}
+
+.container {
+  width:800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding:10px;
+  box-shadow:0 0 10px 2px;
+ }
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  gap: 10px;
+  margin:20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 45%);
+  border-radius: 5px;
+  padding: 5px, 10px;
+  color:white;
+  outline:none;
+}
+
+.btn:hover {
+  border-color: black;
+  background-color: hsl(var(--hue), 100%, 40%);
+  transition-duration: 0.3s;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: darkslategray;
+}
+
+.btn.incorrect {
+  --hue: var(--hue-incorrect);
+}
+
+.theme-btn {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-width:3px;
+}
+
+.start-btn, .next-btn, .restart-btn, .end-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-width:3px;
+}
+
+.start-btn:hover {
+  background-color: hsl(var(--hue), 100%, 40%);
+  font-size: 3rem;
+  transition-duration: 0.2s;
+  
+}
+
+.controls {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.hide {
+  display: none;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
